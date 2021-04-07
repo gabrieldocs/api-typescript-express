@@ -1,4 +1,8 @@
-## Readme projeto 
+## API express TypeScript com Mongo DB
+
+- Implementando atualizações no projeto como inserçõa de dadaos em banco mongo db e utilizando docker para 
+executar o mongo db 
+- Implementação do Dockerfile
 
 Natureza do trabalho sem levar em conta a LGPD 
 - Autenticação 
