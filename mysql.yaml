@@ -1,6 +1,16 @@
 version: '3'
 
 services:
+  api:
+    image: api-ecossistema:1.0
+    ports:
+      - 9000:9000
+    environment:
+      - DB_HOST=mysql
+      - DB_NAME=${DB_NAME}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_DIALECT=${DB_DIALECT}
   mysql:
     image: mysql:latest 
     ports:
