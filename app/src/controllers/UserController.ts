@@ -13,6 +13,19 @@ class UserController {
         return res.json(users)
     }
 
+
+    /**
+     * 
+     * @param req 
+     * @param res 
+     * @returns return array with users 
+     */
+    public async detail(req: Request, res: Response): Promise<Response>{
+        const user = await User.find({_id: req.params.id})
+        return res.json(user)
+    }
+
+
     /**
      * 
      * @param req 
