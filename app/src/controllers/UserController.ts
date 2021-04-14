@@ -9,7 +9,7 @@ class UserController {
      * @returns return array with users 
      */
     public async index(req: Request, res: Response): Promise<Response>{
-        const users = await User.find()
+        const users = await User.find({})
         return res.json(users)
     }
 
