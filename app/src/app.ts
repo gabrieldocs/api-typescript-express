@@ -21,9 +21,9 @@ class App {
     }
 
     private database():void{
-        mongoose.connect('mongodb://mongodb/tsnode',{
+        mongoose.connect('mongodb://127.0.0.1:27017/tsnode',{
             useNewUrlParser: true, 
-            useUnifiedTopology: true,                  
+            useUnifiedTopology: true,            
         }).catch(err => {
             console.log(err)
         })
